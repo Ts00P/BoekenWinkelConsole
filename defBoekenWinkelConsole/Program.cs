@@ -107,8 +107,7 @@ namespace defBoekenWinkelConsole
 
                     case ConsoleKey.D6:
                         Console.WriteLine("Geef het id op:");
-                        boekenWinkel.VerwijderProduct(Console.ReadLine());
-                        Console.WriteLine("Het product is verwijderd.");
+                        Console.WriteLine(boekenWinkel.VerwijderProduct(Console.ReadLine()));
                         break;
 
                     case ConsoleKey.D7:
@@ -132,7 +131,7 @@ namespace defBoekenWinkelConsole
                             Console.WriteLine("De aanpassing is correct voltooid!");
                             break;
                         }
-                        catch (InvalidCastException ex)
+                        catch
                         {
                             Console.WriteLine("Geen geldig boek gevonden...");
                         }
